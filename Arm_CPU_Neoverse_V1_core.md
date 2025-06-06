@@ -14,10 +14,10 @@ Stage 1 : Top Down Analysis : Hotspot Detection
   Helps to characterize the distribution of cycles spent by the processor.  
   Locate Bottleneck.
   Percentage of the total execution bandwidth of the processor : 
-  a. Operations retiring  :  This indicates the cycles that were used and efficient.
-  b. Branch Misspeculation :  Executed operations that didn’t retire due to a pipeline flush. The inefficient cycles spent for recovering from the mis-speculation, refilling the pipeline from the correct location.
-  c. Frontend Stalls :  stalled due to resource constraints in the frontend unit.
-  d. Backend Stalls :  stalled due to resource constraints in the backend unit.
+  - Operations retiring    :  This indicates the cycles that were used and efficient.
+  - Branch Misspeculation  :  Executed operations that didn’t retire due to a pipeline flush. The inefficient cycles spent for recovering from the mis-speculation, refilling the pipeline from the correct location.
+  - Frontend Stalls        :  stalled due to resource constraints in the frontend unit.
+  - Backend Stalls         :  stalled due to resource constraints in the backend unit.
 
 The total execution bandwidth of the processor can be measured in execution slots for operations.  
 Micro-architectural parameter  : The number of slots supported by the core determines the execution bandwidth of the processor for top-down accounting. 
